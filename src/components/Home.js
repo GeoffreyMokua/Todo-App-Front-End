@@ -1,3 +1,4 @@
+// import '../styles/home.css'
 import Header from '../layout/Header.js'
 import SideBar from '../layout/SideBar.js'
 import TaskOption from './TaskOption.js'
