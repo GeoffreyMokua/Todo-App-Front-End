@@ -1,5 +1,8 @@
 import { useContext } from "react";
-import { OptionContextUpdate , endPointContextUpdate } from "../services/OptionProvider.js";
+import {
+    OptionContextUpdate,
+    endPointContextUpdate,
+} from "../services/OptionProvider.js";
 
 export default function SideBar() {
 
