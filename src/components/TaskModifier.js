@@ -7,6 +7,19 @@ export default function TaskModifier({todo, show, handleClose}) {
     const toggleOpen = () => setDropdown(!dropdown);
 
     const [category, setCategory] = useState('')
+    const handleTaskModifier = () => {
+      handleClose(false);
+    };
+
+    const toggleStatus = (status) => {
+      fetch(`http://localhost:9292/api/todo/status/${todo.id}`), {
+        method: "PATCH",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+          status: status,
+        })
+      }
+    }
     
   return (
     <Modal
