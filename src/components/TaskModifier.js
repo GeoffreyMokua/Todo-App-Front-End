@@ -47,6 +47,27 @@ export default function TaskModifier({todo, show, handleClose}) {
 
   const [title, setTitle] = useState(todo.title);
   const [content, setContent] = useState(todo.content);
+
+  const handleForm = () =>{
+    todo.title = title
+    todo.content = content
+    fetch(`http://localhost:9292/api/todo/${todo.id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            title: title,
+            content: content,
+        }),
+    })
+        .then((response) => response.json())
+        .then((record) => {
+            console.log(record);
+        })
+        .catch((err) => {
+            console.error(err);
+        });
+        handleTaskModifier();
+}
     
   return (
     <Modal
