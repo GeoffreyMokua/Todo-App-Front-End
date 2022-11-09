@@ -5,6 +5,10 @@ export const OptionContextUpdate = createContext()
 export const endPointContext = createContext()
 export const endPointContextUpdate = createContext()
 
+// export function useEndPointUpdate(){
+//     return useContext(endPointContextUpdate)
+// }U
+
 export default function OptionProvider({children}) {
     const [option, setOption] = useState(null)
     const [endPoint, setEndPoint] = useState("/todo/all");
