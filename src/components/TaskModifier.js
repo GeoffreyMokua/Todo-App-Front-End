@@ -44,6 +44,9 @@ export default function TaskModifier({todo, show, handleClose}) {
               console.error(err);
           });
   }
+
+  const [title, setTitle] = useState(todo.title);
+  const [content, setContent] = useState(todo.content);
     
   return (
     <Modal
