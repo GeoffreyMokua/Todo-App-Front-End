@@ -4,7 +4,7 @@ import { Modal } from 'react-bootstrap'
 export default function CategoryModal({ status, handleClose }) {
 
     const [category, setCategory] = useState(null)
-// API LINK FOR THE FETCH REQUEST
+
     const handleForm = (e) => {
         e.preventDefault()
         fetch("http://localhost:9292/api/category/new", {
