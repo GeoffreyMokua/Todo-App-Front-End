@@ -1,10 +1,13 @@
-import React, { useContext } from 'react'
+import { useContext, useState } from "react"
+import TaskModal from "./TaskModal.js"
+import CategoryModal from "./CategoryModal.js";
+import { OptionContext } from "../services/OptionProvider.js"
+import { ModalContext } from "../services/ModalProvider.js";
 
 export default function TaskOption() {
-
     const currentOption = useContext(OptionContext);
     const {show, handleOpen, handleClose} = useContext(ModalContext);
-
+    
     const [catModalStatus, setCatModalStatus] = useState(false)
 
         const catModalOpen = () => {
@@ -14,8 +17,8 @@ export default function TaskOption() {
             setCatModalStatus(false);
         };
 
-  return (
-    <div className="task-options container-fluid d-flex justify-content-between px-5">
+    return (
+        <div className="task-options container-fluid d-flex justify-content-between px-5">
             <div className="fs-4 fw-bold text-secondary text-capitalize">
                 {currentOption}
             </div>
@@ -47,6 +50,7 @@ export default function TaskOption() {
                 status={catModalStatus}
                 handleClose={catModalClose}
             />
-        </div>  
-  )
+        </div>
+    );
 }
+
