@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import TaskModifier from "./TaskModifier.js";
 import { TasksProvider } from "../layout/Container.js";
+import '../css/App.css'
 
 const usDateFormat =  (input) => {
     return new Date(input).toLocaleDateString('en-US', {
@@ -56,7 +57,8 @@ export default function ToDoCard({todo}) {
                     maxHeight: "250px",
                 }}
             >
-                <h4 className="card-header">{title}</h4>
+                <h4 className="card-header"
+                style={{color: '#137974'}}>{title}</h4>
                 <div className="card-body">
                     <p className="card-text">{content}</p>
                 </div>

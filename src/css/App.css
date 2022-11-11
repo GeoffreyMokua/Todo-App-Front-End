@@ -1,29 +1,27 @@
 body {
-  /* background-image: url('../public/note-taking.png'); */
-  
-  /* color: #9199a5; */
   margin: 0;
   padding: 0;
 }
 
 .app-container {
-  background: linear-gradient(to right, #00AAFF, #00FF6C);
+  background: linear-gradient(to right, #00AAFF, #06c857);
   min-height: 85vh;
+  /* color: #137974; */
   
 }
 
-.navbar a, ul{
-  color: black;
-}
 
 .navbar-brand{
   color: #3669AD;
 }
 
-/* .Footer{
-  background-color: lightseagreen;
-} */
-/* 
-.Container{
-  
-} */
+.app-sidebar{
+  background-color: #25cdc4;
+  box-shadow: 5px 17px 40px 15px rgba(23,64,84,0.75);
+-webkit-box-shadow: 5px 17px 40px 15px rgba(23,64,84,0.75);
+-moz-box-shadow: 5px 17px 40px 15px rgba(23,64,84,0.75);
+}
+
+
+
+

@@ -3,6 +3,7 @@ import {
     OptionContextUpdate,
     endPointContextUpdate,
 } from "../services/OptionProvider.js";
+import '../css/App.css'
 
 
 export default function SideBar() {
