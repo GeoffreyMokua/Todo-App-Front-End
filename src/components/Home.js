@@ -7,6 +7,7 @@ import TaskLayout from './TaskLayout.js'
 import TaskCard from './TaskCard.js'
 import Root from '../layout/Root.js'
 import Container from '../layout/Container.js'
+import Footer from '../layout/Footer.js'
 
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
                     </TaskContainer>
                 </Container>
             </Root>
+            <Footer />
         </>
     );
 }

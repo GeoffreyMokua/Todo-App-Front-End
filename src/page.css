@@ -6,6 +6,7 @@
     background-color: lightcoral;
 }
 
-.container {
+.app-container {
+    min-height: 95vh;
     background-color: lightseagreen;
 }

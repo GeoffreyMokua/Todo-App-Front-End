@@ -25,7 +25,7 @@ export default function TaskOption() {
             <div>
                 <button
                     type="button"
-                    className="btn btn-outline-dark text-success"
+                    className="btn btn-outline-dark text-primary"
                     onClick={(e) => {
                         e.stopPropagation();
                         handleOpen();
@@ -36,7 +36,7 @@ export default function TaskOption() {
                 &nbsp;
                 <button
                     type="button"
-                    className="btn btn-outline-dark text-success"
+                    className="btn btn-outline-dark text-primary"
                     onClick={(e) => {
                         e.stopPropagation();
                         catModalOpen();

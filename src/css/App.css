@@ -1,0 +1,29 @@
+body {
+  /* background-image: url('../public/note-taking.png'); */
+  
+  /* color: #9199a5; */
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  background: linear-gradient(to right, #00AAFF, #00FF6C);
+  min-height: 85vh;
+  
+}
+
+.navbar a, ul{
+  color: black;
+}
+
+.navbar-brand{
+  color: #3669AD;
+}
+
+/* .Footer{
+  background-color: lightseagreen;
+} */
+/* 
+.Container{
+  
+} */

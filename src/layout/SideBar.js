@@ -4,6 +4,7 @@ import {
     endPointContextUpdate,
 } from "../services/OptionProvider.js";
 
+
 export default function SideBar() {
 
     const setNewOption = useContext(OptionContextUpdate);
@@ -48,7 +49,7 @@ export default function SideBar() {
         },
     ];
     return (
-        <div className="app-sidebar col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 px-0 py-2">
+        <div className="app-sidebar bg-pri col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 px-0 py-2">
             <div className="list-group list-group-flush">
                 {itemList.map((item, index) => {
                     const { optionName, icon, link, endPoint } = item;
