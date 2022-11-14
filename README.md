@@ -43,8 +43,8 @@ SOFTWARE.
  ### link to the site
  
  ### Authors Info
- Geoffrey Mokua
- Grace Aluoch
- Ian Kangancha
- Meshack Mbuvi
- Wycliff Ndungu
+ #### Geoffrey Mokua
+ #### Grace Aluoch
+ #### Ian Kangancha
+ #### Meshack Mbuvi
+ #### Wycliff Ndungu
