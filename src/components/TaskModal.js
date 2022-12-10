@@ -9,8 +9,8 @@ export default function TaskModal() {
     const {show, handleClose}  = useContext(ModalContext)
     const { addTask } = useContext(TasksProvider)
 
-    const [newTodo, setNewTodo] = useState(null)
-    const [newCat, setNewCat] = useState(null)
+    // const [newTodo, setNewTodo] = useState(null)
+    // const [newCat, setNewCat] = useState(null)
     const [title, setTitle] = useState("");
     const [ category, setCategory] = useState("")
     const [content, setContent] = useState("");
